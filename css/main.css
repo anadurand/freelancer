@@ -1,3 +1,85 @@
 /*
  * Estilos de tu proyecto
  */
+ header{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: #2C3E50;
+   height: 100px;
+   color: white;
+ }
+ nav{
+   margin: 0 8%;
+   height: 100px;
+   align-items: center;
+   justify-content: space-between;
+ }
+.menu li{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 3%;
+  margin: 0 .5%;
+}
+.menu li a:hover{
+  color: #18BC9C;
+}
+.change{
+  background-color: #18BC9C;
+
+}
+.menu li a{
+  color: white;
+  font-weight: bolder;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+nav .col-1 a{
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav .col-2{
+  width: 27%;
+}
+.portada{
+  background-color: rgb(24, 188, 156);
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portada .col-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portada .col-2 h1{
+  margin-bottom: 1%;;
+  font-size: 4.5em;
+  color: white;
+}
+.portada hr{
+  display: block;
+  text-align: center;
+  min-width: 40%;
+  border: none;
+  border-top: 5px solid white;
+}
+.star{
+  color: white;
+  font-size: 2em;
+}
+.icon-star:before{
+  display: inline-block;
+  background-color: rgb(24, 188, 156);
+  width: 20%;
+  position: relative;
+  top: -20px;
+}

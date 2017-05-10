@@ -314,7 +314,7 @@ nav .col-2 .menu{
   color: black;
 }
 .data input{
-  padding: 0 4%;
+  padding: 0 3%;
   color: #555;
   font-size: 1.5em;
   height: 65px;
@@ -368,13 +368,51 @@ footer h3{
   margin-top: 5%;
 }
 .footer-arriba p{
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.address{
+  text-align: center;
+}
+.footer-arriba a{
+  color: white;
+}
+
+.footer-arriba .green{
+  color: #18BC9C;
+}
+.footer-arriba .green:hover{
+  text-decoration: underline;
 }
 .info{
   width: 29%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.enlaces{
+  display: flex;
+  width: 100%;
+
+}
+.enlaces li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin: 2%;
+  flex: 1;
+  font-size: 1.2em;
+  padding: 3% 4% 2%;
+}
+.google{
+  font-size: 1.5em;
+}
+.face{
+  position: relative;
+  left: 1%;
 }
 .footer-abajo{
   width: 100%;
@@ -386,4 +424,5 @@ footer h3{
 }
 .footer-abajo p{
   font-size: .85em;
+  margin: 0;
 }

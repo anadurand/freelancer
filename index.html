@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Freelancer</title>
-		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<header>
-			<nav class="container">
+		<header id = "header">
+			<nav class="container" id="navMenu">
 				<div class="col-1">
 					<a href="#" class="">START BOOTSTRAP</a>
 				</div>
 				<div class="col-2">
 					<ul class="menu">
-						<li><a href="">PORTFOLIO</a></li>
-						<li><a href="">ABOUT</a></li>
-						<li><a href="">CONTACT</a></li>
+						<li id= "linkPortfolio"><a href="" >PORTFOLIO</a></li>
+						<li id= "linkAbout"><a href="">ABOUT</a></li>
+						<li id = "linkContact"><a href="">CONTACT</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -29,80 +29,96 @@
 				</div>
 				<div class="col-2">
 					<h1>START BOOTSTRAP</h1>
-					<hr class="icon-star star">
-					<span>Web Developer - Graphic Artist - User Experience Designer</span>
+					<hr class="icon-star star linea">
+					<span class="portada-text">Web Developer - Graphic Artist - User Experience Designer</span>
 				</div>
 		</section>
 		<section class="portfolio">
-				<div class="">
+				<div class="col-1">
 					<h2>PORTFOLIO</h2>
-					<hr>
+					<hr class="icon-star star linea">
 				</div>
-				<div class="">
-					<div>
-						<img src="" alt="">
-						<div class="">
-							<span></span>
+				<div class="col-2">
+					<div class="folio">
+						<img src="assets/images/portfolio/cabin.png" alt="">
+						<div class="overlay">
+							<span class="icon-zoom-in lupa"></span>
 						</div>
 					</div>
-					<div>
-						<img src="" alt="">
-						<div class="">
-							<span></span>
+					<div class="folio">
+						<img src="assets/images/portfolio/cake.png" alt="">
+						<div class="overlay">
+							<span class="icon-zoom-in lupa"></span>
 						</div>
 					</div>
-					<div>
-						<img src="" alt="">
-						<div class="">
-							<span></span>
+					<div class="folio">
+						<img src="assets/images/portfolio/circus.png" alt="">
+						<div class="overlay">
+							<span class="icon-zoom-in lupa"></span>
+						</div>
+					</div>
+					<div class= "folio">
+						<img src="assets/images/portfolio/game.png" alt="">
+						<div class="overlay">
+							<span class="icon-zoom-in lupa"></span>
+						</div>
+					</div>
+					<div class= "folio">
+						<img src="assets/images/portfolio/safe.png" alt="">
+						<div class="overlay">
+							<span class="icon-zoom-in lupa"></span>
+						</div>
+					</div>
+					<div class= "folio">
+						<img src="assets/images/portfolio/submarine.png" alt="">
+						<div class="overlay">
+							<span class="icon-zoom-in lupa"></span>
 						</div>
 					</div>
 				</div>
 		</section>
 		<section class="about">
-				<div>
+				<div class="col-1">
 					<h2>ABOUT</h2>
-					<hr>
+					<hr class="icon-star star linea">
 				</div>
-				<div>
+				<div class="col-2">
 					<p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
 					<p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-					<div class="">
-						<span></span><span>Download Theme</span>
+					<div class="btn-download">
+						<a href="#" class="icon-download download"> Download Theme</a>
 					</div>
 				</div>
 		</section>
 		<section class="contact">
-			<div>
+			<div class="col-1">
 				<h2>CONTACT ME</h2>
-				<hr>
+				<hr class="icon-star star linea">
 			</div>
-			<div class="">
+			<div class="col-2">
 				<form class="" action="index.html" method="post">
-					<div>
-						<label for=""></label>
-						<input type="text" name="" value="">
+					<div class= "data">
+						<label for="name"></label>
+						<input id = "name" type="text" name="" value="">
+						<p></p>
+					</div>
+					<div class= "data">
+						<label for="email"></label>
+						<input id = "email" type="text" name="" value="">
+						<p></p>
+					</div>
+					<div class= "data">
+						<label for="phone"></label>
+						<input id = "phone" type="text" name="" value="">
+						<p></p>
+					</div>
+					<div class= "data">
+						<label for="message"></label>
+						<textarea id = "message" name="name" rows="5" cols="80"></textarea>
 						<p></p>
 					</div>
 					<div>
-						<label for=""></label>
-						<input type="text" name="" value="">
-						<p></p>
-					</div>
-					<div>
-						<label for=""></label>
-						<input type="text" name="" value="">
-						<p></p>
-					</div>
-					<div>
-						<label for=""></label>
-						<input type="text" name="" value="">
-						<p></p>
-					</div>
-					<div>
-						<label for=""></label>
-						<input type="text" name="" value="">
-						<p></p>
+						<input type="submit" name="" value="Send">
 					</div>
 				</form>
 			</div>
@@ -134,5 +150,6 @@
 				<p>Copyright © Your Website 2016</p>
 			</div>
 		</footer>
+		<script src="js/app.js" charset="utf-8"></script>
 	</body>
 </html>

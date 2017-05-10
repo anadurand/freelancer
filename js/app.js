@@ -31,3 +31,26 @@ window.addEventListener("scroll", function(){
    }
    lastScrollTop = currentScroll;
 }, false);
+
+var inputs = document.getElementsByClassName("cambiar");
+
+for(i=0; i<inputs.length; i++){
+    inputs[i].addEventListener("keyup", function(e){
+      console.log(e.target.value);
+        e.target.previousElementSibling.classList.remove("change-label");
+        if(e.target.value != ""){
+          e.target.previousElementSibling.classList.add("change-label");
+        }
+    });
+    inputs[i].addEventListener("blur", function(e){
+      if(e.target.value != ""){
+        e.target.previousElementSibling.classList.add("focus");
+      }
+    });
+    inputs[i].addEventListener("focus", function(e){
+      if(e.target.value != ""){
+        e.target.previousElementSibling.classList.remove("focus");
+      }
+    });
+
+}
